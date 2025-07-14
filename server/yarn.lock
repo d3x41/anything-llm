@@ -1184,11 +1184,6 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@fastify/busboy@^2.0.0":
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/@fastify/busboy/-/busboy-2.1.1.tgz"
-  integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
-
 "@google/generative-ai@^0.1.1":
   version "0.1.3"
   resolved "https://registry.npmjs.org/@google/generative-ai/-/generative-ai-0.1.3.tgz"
@@ -1726,14 +1721,14 @@
   resolved "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@qdrant/js-client-rest@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmjs.org/@qdrant/js-client-rest/-/js-client-rest-1.9.0.tgz"
-  integrity sha512-YiX/IskbRCoAY2ujyPDI6FBcO0ygAS4pgkGaJ7DcrJFh4SZV2XHs+u0KM7mO72RWJn1eJQFF2PQwxG+401xxJg==
+"@qdrant/js-client-rest@^1.14.1":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@qdrant/js-client-rest/-/js-client-rest-1.14.1.tgz#2d01c5ddf6789004a2bf7ece28fb57b6401eea2e"
+  integrity sha512-CkCCTDc4gCXq+hhjB3yDw9Hs/PxCJ0bKqk/LjAAmuL9+nDm/RPue4C/tGOIMlzouTQ2l6J6t+JPeM//j38VFug==
   dependencies:
     "@qdrant/openapi-typescript-fetch" "1.2.6"
     "@sevinf/maybe" "0.5.0"
-    undici "~5.28.4"
+    undici "^6.0.0"
 
 "@qdrant/openapi-typescript-fetch@1.2.6":
   version "1.2.6"
@@ -3920,16 +3915,19 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
-elevenlabs@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/elevenlabs/-/elevenlabs-0.5.0.tgz#07eb1a943b0ab99b925875bd5c57833a3a024e58"
-  integrity sha512-jfex4ecuWIlyAUuMrMJAJNa5MLziqYQOCDw4ZYuoc9PCYLxtHwaYBWpZoDhnYMcceLI7rRRvmbLMcT9HlVMfHA==
+elevenlabs@^1.59.0:
+  version "1.59.0"
+  resolved "https://registry.yarnpkg.com/elevenlabs/-/elevenlabs-1.59.0.tgz#8db85064e3b70b65c63aaa25c105e1e3701c0fe4"
+  integrity sha512-OVKOd+lxNya8h4Rn5fcjv00Asd+DGWfTT6opGrQ16sTI+1HwdLn/kYtjl8tRMhDXbNmksD/9SBRKjb9neiUuVg==
   dependencies:
     command-exists "^1.2.9"
     execa "^5.1.1"
-    form-data "4.0.0"
-    node-fetch "2.7.0"
-    qs "6.11.2"
+    form-data "^4.0.0"
+    form-data-encoder "^4.0.2"
+    formdata-node "^6.0.3"
+    node-fetch "^2.7.0"
+    qs "^6.13.1"
+    readable-stream "^4.5.2"
     url-join "4.0.1"
 
 emoji-regex@^8.0.0:
@@ -4623,6 +4621,11 @@ form-data-encoder@1.7.2:
   version "1.7.2"
   resolved "https://registry.npmjs.org/form-data-encoder/-/form-data-encoder-1.7.2.tgz"
   integrity sha512-qfqtYan3rxrnCk1VYaA4H+Ms9xdpPqvLZa6xmMgFvhO32x7/3J/ExcTd6qpxM0vH2GdMI+poehyBZvqfMTto8A==
+
+form-data-encoder@^4.0.2:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/form-data-encoder/-/form-data-encoder-4.1.0.tgz#497cedc94810bd5d53b99b5d4f6c152d5cbc9db2"
+  integrity sha512-G6NsmEW15s0Uw9XnCg+33H3ViYRyiM0hMrMhhqQOR8NFc5GhYrI+6I3u7OTw7b91J2g8rtvMBZJDbcGb2YUniw==
 
 form-data@4.0.0, form-data@^4.0.0:
   version "4.0.0"
@@ -6121,7 +6124,7 @@ node-domexception@1.0.0:
   resolved "https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz"
   integrity sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==
 
-node-fetch@2.7.0, node-fetch@^2.6.1, node-fetch@^2.6.12, node-fetch@^2.6.7:
+node-fetch@2.7.0, node-fetch@^2.6.1, node-fetch@^2.6.12, node-fetch@^2.6.7, node-fetch@^2.7.0:
   version "2.7.0"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
@@ -6820,7 +6823,7 @@ qs@6.13.0:
   dependencies:
     side-channel "^1.0.6"
 
-qs@^6.14.0:
+qs@^6.13.1, qs@^6.14.0:
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.14.0.tgz#c63fa40680d2c5c941412a0e899c89af60c0a930"
   integrity sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==
@@ -7799,17 +7802,15 @@ undici-types@~6.19.2:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
+undici@^6.0.0:
+  version "6.21.3"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.21.3.tgz#185752ad92c3d0efe7a7d1f6854a50f83b552d7a"
+  integrity sha512-gBLkYIlEnSp8pFbT64yFgGE6UIB9tAkhukC23PmMDCe5Nd+cRqKxSjw5y54MK2AZMgZfJWMaNE4nYUHgi1XEOw==
+
 undici@^6.19.5:
   version "6.21.1"
   resolved "https://registry.npmjs.org/undici/-/undici-6.21.1.tgz"
   integrity sha512-q/1rj5D0/zayJB2FraXdaWxbhWiNKDvu8naDT2dl1yTlvJp4BLtOcp2a5BvgGNQpYYJzau7tf1WgKv3b+7mqpQ==
-
-undici@~5.28.4:
-  version "5.28.4"
-  resolved "https://registry.npmjs.org/undici/-/undici-5.28.4.tgz"
-  integrity sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==
-  dependencies:
-    "@fastify/busboy" "^2.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
